@@ -1,0 +1,52 @@
+PODS:
+  - FFmpeg4ijkplayer-ios-bin (0.3.1-build-20150911):
+    - FFmpeg4ijkplayer-ios-bin/ffmpeg (= 0.3.1-build-20150911)
+  - FFmpeg4ijkplayer-ios-bin/ffmpeg (0.3.1-build-20150911)
+  - ijkplayer (0.3.2-rc.3):
+    - ijkplayer/IJKMediaPlayer (= 0.3.2-rc.3)
+    - ijkplayer/ijkplayer (= 0.3.2-rc.3)
+    - ijkplayer/ijkplayer-ios (= 0.3.2-rc.3)
+    - ijkplayer/ijkplayer-ios-mrc (= 0.3.2-rc.3)
+    - ijkplayer/ijksdl (= 0.3.2-rc.3)
+    - ijkplayer/ijksdl-ios (= 0.3.2-rc.3)
+    - ijkplayer/ijksdl-ios-mrc (= 0.3.2-rc.3)
+  - ijkplayer/IJKMediaPlayer (0.3.2-rc.3):
+    - ijkplayer/ijkplayer-ios
+    - ijkplayer/ijkplayer-ios-mrc
+  - ijkplayer/ijkplayer (0.3.2-rc.3):
+    - ijkplayer/ijksdl
+  - ijkplayer/ijkplayer-ios (0.3.2-rc.3):
+    - ijkplayer/ijkplayer
+    - ijkplayer/ijksdl-ios
+    - ijkplayer/ijksdl-ios-mrc
+  - ijkplayer/ijkplayer-ios-mrc (0.3.2-rc.3):
+    - ijkplayer/ijkplayer
+    - ijkplayer/ijksdl-ios
+    - ijkplayer/ijksdl-ios-mrc
+  - ijkplayer/ijksdl (0.3.2-rc.3):
+    - FFmpeg4ijkplayer-ios-bin (= 0.3.1-build-20150911)
+  - ijkplayer/ijksdl-ios (0.3.2-rc.3):
+    - ijkplayer/ijksdl
+  - ijkplayer/ijksdl-ios-mrc (0.3.2-rc.3):
+    - ijkplayer/ijksdl
+  - ZipArchive (1.4.0)
+
+DEPENDENCIES:
+  - ijkplayer (~> 0.3.2-rc.3)
+  - ZipArchive (from `https://github.com/boxfish-project/ZipArchive.git`)
+
+EXTERNAL SOURCES:
+  ZipArchive:
+    :git: https://github.com/boxfish-project/ZipArchive.git
+
+CHECKOUT OPTIONS:
+  ZipArchive:
+    :commit: f4de0dbc9fc599d3282274a3cf69f937b6f110ee
+    :git: https://github.com/boxfish-project/ZipArchive.git
+
+SPEC CHECKSUMS:
+  FFmpeg4ijkplayer-ios-bin: 74239fee449269861bd63481ce15b960f4ed2418
+  ijkplayer: efcdeb815cf5687681f29bcf956311f51f60b468
+  ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
+
+COCOAPODS: 0.37.2
