@@ -1,40 +1,43 @@
-machine:
-  xcode:
-    version: "6.4"
-    # version: "6.3.1"
+# machine:
+#   xcode:
+#     version: "6.4"
+#     # version: "6.3.1"
+# #   environment:
+# #     # JAVA_OPTS: "-Xms256m -Xmx512m -XX:MaxPermSize=512m"
+# #     MAVEN_OPTS: "-Xms256m -Xmx512m -XX:MaxPermSize=512m"
+#
 #   environment:
-#     # JAVA_OPTS: "-Xms256m -Xmx512m -XX:MaxPermSize=512m"
-#     MAVEN_OPTS: "-Xms256m -Xmx512m -XX:MaxPermSize=512m"
+#     # CocoaPods versions greater than 0.34 require
+#     # your terminal to be using UTF-8 encoding.
+#     LANG: en_US.UTF-8
+#     XCODE_SCHEME: "binibini"
+# dependencies:
+#   pre:
+#     # - "gem install cocoapods --pre"
+#     # - sudo gem install cocoapods --version 0.35.0
+#     - sudo gem install cocoapods --version 0.37.2
+#     # CocoaPods sometimes has issues using caches
+#     # between different versions of CocoaPods.
+#     - pod setup
+#     - pod install
+# test:
+#   override:
+#     - xctool
+#       -reporter pretty
+#       -reporter junit:$CIRCLE_TEST_REPORTS/xcode/results.xml
+#       -reporter plain:$CIRCLE_ARTIFACTS/xctool.log
+#       CODE_SIGNING_REQUIRED=NO
+#       CODE_SIGN_IDENTITY=
+#       PROVISIONING_PROFILE=
+#       -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest'
+#       -sdk iphonesimulator
+#       -workspace "binibini.xcworkspace"
+#       -scheme "binibini"
+#       build build-tests run-tests
+# notify:
+#   webhooks:
+#     # A list of hook hashes, containing the url field
+#     - url: https://hook.bearychat.com/=bw6BY/circleci/06cabe423d72123f74bdd06323f99571
 
-  environment:
-    # CocoaPods versions greater than 0.34 require
-    # your terminal to be using UTF-8 encoding.
-    LANG: en_US.UTF-8
-    XCODE_SCHEME: "binibini"
-dependencies:
-  pre:
-    # - "gem install cocoapods --pre"
-    # - sudo gem install cocoapods --version 0.35.0
-    - sudo gem install cocoapods --version 0.37.2
-    # CocoaPods sometimes has issues using caches
-    # between different versions of CocoaPods.
-    - pod setup
-    - pod install
-test:
-  override:
-    - xctool
-      -reporter pretty
-      -reporter junit:$CIRCLE_TEST_REPORTS/xcode/results.xml
-      -reporter plain:$CIRCLE_ARTIFACTS/xctool.log
-      CODE_SIGNING_REQUIRED=NO
-      CODE_SIGN_IDENTITY=
-      PROVISIONING_PROFILE=
-      -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest'
-      -sdk iphonesimulator
-      -workspace "binibini.xcworkspace"
-      -scheme "binibini"
-      build build-tests run-tests
-notify:
-  webhooks:
-    # A list of hook hashes, containing the url field
-    - url: https://hook.bearychat.com/=bw6BY/circleci/06cabe423d72123f74bdd06323f99571
+language: objective-c
+osx_image: xcode6.4
