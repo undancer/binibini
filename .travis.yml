@@ -43,4 +43,4 @@ language: objective-c
 osx_image: xcode6.4
 xcode_workspace: binibini.xcworkspace
 # xcode_project: binibini.xcodeproj # path to your xcodeproj folder
-xcode_scheme: binibiniTests
+xcode_scheme: binibini
